@@ -1,0 +1,51 @@
+<div>
+    <form novalidate ng-submit="loadPage()">
+        <div class="form-group col-md-6">
+            <label for="minPriceField">Фильтр по минимальной цене</label>
+            <input class="form-control" type="text" ng-model="min_price" id="minPriceField">
+        </div>
+        <p></p>
+        <div class="form-group col-md-6">
+            <label for="maxPriceField">Фильтр по максимальной цене</label>
+            <input class="form-control" type="text" ng-model="max_price" id="maxPriceField">
+        </div>
+        <p></p>
+        <div class="form-group col-md-6">
+            <label for="titleField">Фильтр по названию</label>
+            <input class="form-control" type="text" ng-model="title" id="titleField">
+        </div>
+        <p></p>
+        <div>
+            <button class="btn btn-primary" type="submit">Применить фильтр</button>
+
+        </div>
+    </form>
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>Название</td>
+            <td>Цена</td>
+            <td></td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="p in productsPage">
+            <td>{{p.id}}</td>
+            <td>{{p.title}}</td>
+            <td>{{p.price}}</td>
+            <td><button class="btn btn-primary" ng-click="addToCart(p.id)">В корзину</button></td>
+            <td><button class="btn btn-primary" ng-click="deleteProductById(p.id)">Delete</button></td>
+        </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li ng-repeat="p in navList" class="page-item">
+                <a class="page-link" ng-click="loadPage(p)">{{p}}</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
