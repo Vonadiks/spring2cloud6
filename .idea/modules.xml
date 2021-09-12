@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/spring2cloud6.iml" filepath="$PROJECT_DIR$/.idea/spring2cloud6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring2cloud6/cloud-common/cloud-common.iml" filepath="$PROJECT_DIR$/spring2cloud6/cloud-common/cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring2cloud6/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/spring2cloud6/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring2cloud6/front-service/front-service.iml" filepath="$PROJECT_DIR$/spring2cloud6/front-service/front-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring2cloud6/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/spring2cloud6/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring2cloud6/products-service/products-service.iml" filepath="$PROJECT_DIR$/spring2cloud6/products-service/products-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring2cloud6/spring2cloud6.iml" filepath="$PROJECT_DIR$/spring2cloud6/spring2cloud6.iml" />
     </modules>
   </component>
 </project>
